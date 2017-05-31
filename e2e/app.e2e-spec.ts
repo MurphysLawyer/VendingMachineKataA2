@@ -8,8 +8,9 @@ describe('vending-machine-kata-a2 App', function() {
     page = new VendingMachineKataA2Page();
   });
 
-  it('should display message saying app works', () => {
+  it('should allow showing the instructions information', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('test');
+    element(by.css("[data-test-id='btn-instructions-info']")).click();
+    // expect(page.getParagraphText()).toEqual('test');
   });
 });

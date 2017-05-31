@@ -1,4 +1,4 @@
-Instructions&nbsp;&nbsp;<vmk-hide-show-button [show]='instructionsVisible' (stateChanged)='instructionsVisible = $event'></vmk-hide-show-button>
+Instructions&nbsp;&nbsp;<vmk-hide-show-button [show]='instructionsVisible' (stateChanged)='instructionsVisible = $event' data-test-id="btn-instructions-info"></vmk-hide-show-button>
 <ul *ngIf='instructionsVisible'>
   <li>Insert coins by clicking on coin.</li>
   <li>The penny and foreign coin will go right into the Coin Return Area (This is a U.S. hosted machine! :).</li>
